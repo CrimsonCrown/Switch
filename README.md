@@ -17,11 +17,17 @@ na pasta onde está presente o executável, digite no terminal (./a.out)
 # Ideia do Problema
 
 ## Proposta Para o Projeto
-	Para este projeto, deve ser implementado um sistema que simula o funcionamento de um switch de enlace, onde maquinas diferentes se comunicam por meio de um unico canal, porém com segmentos diferentes para cada maquina, havendo necessidade de controlar interferencias entre mensagens.
-		Além disso, é necessário a possibilidade de processar mensagens broadcast de uma maquina para as outras, para não saturar o enlace com pacotes redundantes e salvar desempenho.
+	Para este projeto, deve ser implementado um sistema que simula o funcionamento de um switch de enlace, 
+	onde maquinas diferentes se comunicam por meio de um unico canal, porém com segmentos diferentes para 
+	cada maquina, havendo necessidade de controlar interferencias entre mensagens.
+		Além disso, é necessário a possibilidade de processar mensagens broadcast de uma maquina para as 
+		outras, para não saturar o enlace com pacotes redundantes e salvar desempenho.
 
 ## O Que Efetivamente Foi Feito
-	Foi implementado neste projeto um programa multi-thread que permite threads se comunicarem e mandarem dados uma para as outras utilizando os modelos single-cast e broad-cast. O projeto permite que threads se comuniquem entre si sempre que as mesmas não estejam enviando nem recebendo uma mensagem nesse exato momento. Dessa forma, ele multiplexa e demultiplexa mensagens entre elas de modo a não desperdiçar recursos que poderiam estar sendo usados para mandar mais mensagens.
+	Foi implementado neste projeto um programa multi-thread que permite threads se comunicarem e mandarem 
+	dados uma para as outras utilizando os modelos single-cast e broad-cast. O projeto permite que threads se
+	comuniquem entre si sempre que as mesmas não estejam enviando nem recebendo uma mensagem nesse exato
+	momento. Dessa forma, ele multiplexa e demultiplexa mensagens entre elas de modo a não desperdiçar recursos que poderiam estar sendo usados para mandar mais mensagens.
 		Já que o conteudo das mensagens e a semantica por tras delas não é relevante para o projeto, já que esse só se foca na concorrencia, as threads geram mensagens sem semantica nem contexto e enviam para outras threads quaisquer apenas por motivos de testabilidade.
 
 # Contexto Teórico
