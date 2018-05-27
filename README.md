@@ -17,11 +17,11 @@ na pasta onde está presente o executável, digite no terminal (./a.out)
 # Ideia do Problema
 
 ## Proposta Para o Projeto
-	Para este projeto, deve ser implementado um sistema que simula o funcionamento de um switch de enlace, 
-	onde maquinas diferentes se comunicam por meio de um unico canal, porém com segmentos diferentes para 
-	cada maquina, havendo necessidade de controlar interferencias entre mensagens.
-		Além disso, é necessário a possibilidade de processar mensagens broadcast de uma maquina para as 
-		outras, para não saturar o enlace com pacotes redundantes e salvar desempenho.
+		Para este projeto, deve ser implementado um sistema que simula o funcionamento de um switch de 
+	enlace, onde maquinas diferentes se comunicam por meio de um unico canal, porém com segmentos 
+	diferentes para cada maquina, havendo necessidade de controlar interferencias entre mensagens.
+		Além disso, é necessário a possibilidade de processar mensagens broadcast de uma maquina para 
+	as outras, para não saturar o enlace com pacotes redundantes e salvar desempenho.
 
 ## O Que Efetivamente Foi Feito
 	Foi implementado neste projeto um programa multi-thread que permite threads se comunicarem e mandarem 
